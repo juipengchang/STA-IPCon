@@ -24,7 +24,7 @@ The structure of this repository is based on [Actionformer](https://github.com/h
 
 ## Data Preparation
 **Download Features and Annotations**
-* Download *vessel* from [data](https://pan.baidu.com/s/1sTsfHMR8U2j7ghrVIIdKEA), extraction coda: `sjtu`.
+* Contact Prof. Qin (bjqin@sjtu.edu.cn) to obtain authorization to download and use our data file *vessel*.
 * The file includes vessel features extracted by [SVS-Net](https://pdf.sciencedirectassets.com/271125/1-s2.0-S0893608020X00062/1-s2.0-S0893608020301672/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBgaCXVzLWVhc3QtMSJIMEYCIQCuHPwbyATZKjG8AKDdowvQvJVacvanAJYFoYTp%2B1V%2BuQIhAK5MQk7DzC9IMg3%2FfvhBENbiSuA%2BBW9s83EXBTAV3OL4KrIFCHEQBRoMMDU5MDAzNTQ2ODY1IgzD051C%2BTO1mdcSiqEqjwUeN5Prrithf1kEHD4FpqKZoANq6DkQvKDNu4plrZUqj5%2BW71Ik10XvZ9yqaFgBeF9ceXAh4%2BrigXC%2FZfCEF1ZSGmOlWvHupm7X%2F75NpXqMenQ8%2FQ9gv1q71qGOVrLqLHUpqbYInYi%2Fkecau1kI5GOQGruW5sFm%2Bff1BxkwmqS%2BcBl2DuFLlAGZfXsZgy7CRky7bRiCFCtRSVsi813USHc9aRdRE12Lz%2FflazSVzxBDDQDeUcbGeWomatu01%2FNPNzstp5QQ%2Bqw5J1gpOGgNIdiTEqb1SVlUvtqad9p5lwYvgEowRW%2FLDQrmwlWRjX2eKQxouM9GpZEwrqFoI1t7L763p4yPCE4jSvPjpYC4SaUOmSLKqaeOvqJEldLK2Bz%2FnsN79UrpUu%2B9kYFNK3q%2BzfwXrNcXx%2BkjTGa9p0Iynl2A6JQb%2Buq2JWIGAeLsp2sPmVuIxx3p%2FjZ0OeTJxe2ytRWCqQwLXLKVhfa%2Fk70wZn2RlrGfDfSTdGbMjlhyaC0aLCTT2ZkROpSuWibNLGIYJtL97W7I3psUInRnAPOZtEIqdycDJaduA7D0Bo0yiYVOu7LWv7sYJSSkY1kQ2Xf0E7XbsVx7GbHThuOSQGyaL4K8x%2BjJIFW1gQkKLBc3GJwRlHcmcTw%2Bl9o5WrI98%2FXzFPpcQdYtg%2BnApDLlsp4yNivBNG9pRej%2FImj4tZUU3C%2FN1bMMdR9iJlLyR1%2FRXebaUM%2BM6lZEA3BNx4sCXahqBmDb%2Fym8yphpYmLSWTJpv8%2BuJpUQakFFuj4K7myVUyFR7CDJs7hXVhRbK%2FG90oGbQx%2Bf4sksMLqg9X3pzGrqXa7AzWKcjo7MMfNH1UxVuvy2KaRpuoAosduxr7YG6RpuoSMYMMzluqQGOrABmfdhsJaxQAqoohfM069LoMnw3FTfjVFy7cGVR2rLeDvyKRZf90oMbDjB4pBiKRkqeuuuP9YlQWIPjGzSTThemSmGfms9v51qRvumL9pvdhlqk0%2B1yeFHlf75B7XbG%2FyoTWUaLLVsHPsP3fqjcYv8FXLh4zKvei8A%2B%2BCQGeEJzP%2BIRd275q%2BOO12npkS777oh7mxIYOL9E%2Bwp8Hwt5e3Le6AHVxU84nCMucRTaelQVkU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230618T081810Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYYPFNSYUD%2F20230618%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dce1d554d6c4ea8984b729b60080426c150f324deadbb317189d5986fd1ce55f&hash=2cd1d9e100688a81aeea4ae45011c0d6070a92f465ef7b18002e212e894f7703&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0893608020301672&tid=spdf-ca82db57-b4fd-4f2b-9c12-bec366e45e74&sid=b6c6c4883afb074498897de41163762420a3gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=050d59035f515e5f57&rr=7d92199eefbd107e&cc=cn) and annotations in json format (similar to ActivityNet annotation format).
 
 **Unpack Features and Annotations**
@@ -33,10 +33,10 @@ The structure of this repository is based on [Actionformer](https://github.com/h
 ```
 This folder
 └───README.md
-│   ...  
+│   ...
 │
-└───data/
-│    └───vessel/
+└───data
+│    └───vessel
 │    │	 └───annotations
 │    │	     └───vessel.json
 │    │	 └───image
@@ -53,7 +53,7 @@ This folder
 ## Training and Evaluation
 **Download Trained Model**
 
-We provide a trained model for this research. The model with all training logs can be downloaded from [model](https://pan.baidu.com/s/1v-ILF-ZukWXuk-JdO02V7Q), extraction coda: `sjtu`.
+We provide a trained model for this research. The model with all training logs can be downloaded from [model](https://pan.baidu.com/s/1v-ILF-ZukWXuk-JdO02V7Q), extraction coda: `sjtu`. You can also directly train the model yourself without downloading and unpacking.
 
 **Unpack Trained Model**
 * Unpack the file under *./ckpt*.
@@ -61,10 +61,10 @@ We provide a trained model for this research. The model with all training logs c
 ```
 This folder
 └───README.md
-│   ...  
+│   ...
 │
-└───ckpt/
-│    └───vessel_SpTeAttenRPCon_reproduce/
+└───ckpt
+│    └───vessel_SpTeAttenRPCon_reproduce
 │    │	 └───logs
 │    │	 └───config.txt
 │    │	 └───epoch_xxx.pth.tar
@@ -114,6 +114,8 @@ python ./eval.py ./configs/vessel_SpTeAttenRPCon.yaml ./ckpt/vessel_SpTeAttenRPC
 
 
 ## Contact
+Binjie Qin (bjqin@sjtu.edu.cn)
+
 Ruipeng Zhang (juipengchang@sjtu.edu.cn)
 
 ## References
@@ -131,7 +133,7 @@ If you are using our code, please consider citing our paper.
 }
 ```
 
-If you are using the structure of this repository, you can also cite 
+If you are using the structure of this repository, you can also cite
 ```
 @inproceedings{zhang2022actionformer,
   title={ActionFormer: Localizing Moments of Actions with Transformers},
