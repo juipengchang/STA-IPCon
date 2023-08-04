@@ -2,7 +2,9 @@
 
 By Ruipeng Zhang, Binjie Qin, Jun Zhao, Yueqi Zhu, Yisong Lv, Song Ding.
 
-This repository is the official implementation of ["Locating X-ray coronary angiogram keyframes via long short-term spatiotemporal attention with image-to-patch contrastive learning"](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10154029). Our paper is accepted for publication in IEEE Transactions on Medical Imaging.
+This repository is the official implementation of ["Locating X-ray coronary angiogram keyframes via long short-term spatiotemporal attention with image-to-patch contrastive learning"](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10154029) in IEEE Transactions on Medical Imaging.
+
+Note: The dataset is not publically accessed for the research purpose due to the medical ethics review issued by hospital offical, who confirmed that the raw image data should not be given to anyone outside the author team. 
 
 
 ## Introduction
@@ -125,11 +127,14 @@ The authors thank all cited authors for providing the source code used in this w
 If you are using our code, please consider citing our paper.
 ```
 @article{Zhang2023LocatingXC,
-  title={Locating X-ray coronary angiogram keyframes via long short-term spatiotemporal attention with image-to-patch contrastive learning.},
+  title={Locating X-ray coronary angiogram keyframes via long short-term spatiotemporal attention with image-to-patch contrastive learning},
   author={Ruipeng Zhang and Binjie Qin and Jun Zhao and Yueqi Zhu and Yisong Lv and Song Ding},
   journal={IEEE transactions on medical imaging},
   year={2023},
-  volume={PP}
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TMI.2023.3286859}
 }
 ```
 
